@@ -1,0 +1,5 @@
+Download from https://ffmpeg.zeranoe.com/builds
+Go to Command Prompt/Terminal
+cd %USERPROFILE%\Videos
+ffmpeg -i input_file.mp4 -vcodec libx264 -x264opts frame-packing=3 output_file.mp4
+ffmpeg -i input_file.mkv -c copy -metadata:s:v:0 stereo_mode=1 output_file.mkv
